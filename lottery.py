@@ -8,17 +8,13 @@ def randomizer():
 
 def randomloop():
     listy = []
-    d = 0
-    c = 10
-    while d < c:
+    for i in range(5):
         t = randomizer()
         if listy.count(t):
             t = randomizer()
             listy.append(t)
         else:
             listy.append(t)
-        d += 1
-
     print(listy)
     input("press any key to terminate")
 
